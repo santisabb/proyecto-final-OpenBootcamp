@@ -3,9 +3,10 @@
     grid-area: side;
     height: 100vh;
     background-color: red;
-    color: white;
-    //margin-left: 0;
     width: 100%;
+    a{
+        color: white;
+    }
     .nav-side-bar{
         display: flex;
         flex-direction: column;

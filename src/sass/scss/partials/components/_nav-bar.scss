@@ -3,5 +3,8 @@
     width: 100%;
     .option{
         list-style-type: none;
+        a{
+            text-decoration: none;
+        }
     }
 }

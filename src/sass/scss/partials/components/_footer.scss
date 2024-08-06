@@ -2,9 +2,11 @@ footer{
     grid-area: footer;
     background-color: yellow;
     width: 100%;
-    color: black;
     height: 3rem;
     display: flex;
+    a{
+        color: black;
+    }
     .footer-list{
         display: flex;
         flex-direction: row;

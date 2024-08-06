@@ -9,9 +9,11 @@ footer {
   grid-area: footer;
   background-color: yellow;
   width: 100%;
-  color: black;
   height: 3rem;
   display: flex;
+}
+footer a {
+  color: black;
 }
 footer .footer-list {
   display: flex;
@@ -27,8 +29,10 @@ footer .footer-list {
   grid-area: side;
   height: 100vh;
   background-color: red;
-  color: white;
   width: 100%;
+}
+.side-bar a {
+  color: white;
 }
 .side-bar .nav-side-bar {
   display: flex;
@@ -46,6 +50,9 @@ footer .footer-list {
 }
 .nav-bar .option {
   list-style-type: none;
+}
+.nav-bar .option a {
+  text-decoration: none;
 }
 
 .grid-display {
