@@ -1,0 +1,18 @@
+.side-bar{
+    display: flex;
+    grid-area: side;
+    height: 100vh;
+    background-color: red;
+    color: white;
+    //margin-left: 0;
+    width: 100%;
+    .nav-side-bar{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

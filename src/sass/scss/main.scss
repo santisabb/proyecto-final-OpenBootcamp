@@ -1,0 +1,32 @@
+//IMPORT DE BASE
+@import 'partials/base/reset';
+
+
+
+
+
+
+//IMPORT DE COMPONENTES
+@import 'partials/components/footer';
+@import 'partials/components/side-bar';
+@import 'partials/components/nav-bar';
+
+
+//cambiar a un o varios archivos de partial el siguiente codigo
+.grid-display{
+    display: grid;
+    grid-template-areas: 
+    'side main'
+    'side main'
+    'footer footer';
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+main{
+    grid-area: main;
+    background-color: green;
+    width: 100%;
+}
