@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 
 
+import { Link } from "react-router-dom"
+
 function NavBar({ list, style }){
     return(
         <>
@@ -12,9 +14,8 @@ function NavBar({ list, style }){
                         return(
                             // eslint-disable-next-line react/jsx-key
                             <li className="option">
-                                <a href={item.link}>{item.name}</a>
+                                <Link key={item.name} to={item.link}>{item.name}</Link>
                             </li>
-                            //TODO averiguar como usar componente de Link de react-router en vez de anchor para aplicar SPA 
                         )
                     })
                 }
