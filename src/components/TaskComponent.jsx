@@ -11,8 +11,8 @@ function TaskComponent ({ task }) {
         <h3>Nombre: {task.name}</h3>
       </div>
       <div className='card-body'>
-        <p>Descripción: {task.description}</p>
-        <p>Nivel: {task.level}</p>
+        <p><b>Descripción:</b> {task.description}</p>
+        <p><b>Nivel:</b> {task.level}</p>
       </div>
       
       

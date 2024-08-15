@@ -13,8 +13,8 @@ function NavBar({ list, style }){
                     list.map((item) =>{
                         return(
                             // eslint-disable-next-line react/jsx-key
-                            <li className="option">
-                                <Link key={item.name} to={item.link}>{item.name}</Link>
+                            <li key={item.link} className="option">
+                                <Link to={item.link}>{item.name}</Link>
                             </li>
                         )
                     })
@@ -27,8 +27,12 @@ function NavBar({ list, style }){
 
 export const sideBarList = [
     {
-        name: 'Side 1',
-        link: '/side1',
+        name: 'Inicio',
+        link: '/home',
+    },
+    {
+        name: 'Mis tareas',
+        link: '/task page',
     },
     {
         name: 'Side 2',
