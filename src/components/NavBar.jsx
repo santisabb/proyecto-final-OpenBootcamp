@@ -34,6 +34,10 @@ export const sideBarList = [
         name: 'Mis tareas',
         link: '/task page',
     },
+		{
+			name: 'Saludito',
+			link: '/hello user',
+	},
     {
         name: 'Side 2',
         link: '/side2',

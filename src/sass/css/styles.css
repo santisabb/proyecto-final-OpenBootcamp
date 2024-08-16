@@ -66,5 +66,18 @@ main {
   grid-area: main;
   background-color: green;
 }
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+main form label {
+  font-size: 1.2em;
+}
+main form input {
+  padding: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
