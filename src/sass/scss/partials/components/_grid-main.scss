@@ -16,12 +16,13 @@ main{
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			width: 50%;
+			width: 100%;
+			gap: 1rem;
 			label{
 				font-size: 1.2em;
 			}
 			input{
-				//width: 50%;
+				width: 50%;
 				padding: 0;
 			}
 		}

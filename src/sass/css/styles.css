@@ -71,12 +71,14 @@ main form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
+  gap: 1rem;
 }
 main form label {
   font-size: 1.2em;
 }
 main form input {
+  width: 50%;
   padding: 0;
 }
 
