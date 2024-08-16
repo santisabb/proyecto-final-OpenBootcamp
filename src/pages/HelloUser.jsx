@@ -1,5 +1,5 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-
+import Form from "../components/Form.jsx"
 import { useRef, useState, useEffect } from "react"
 
 const rymLink = 'https://rickandmortyapi.com/api/character/'
@@ -40,17 +40,12 @@ export default function HelloUser() {
 
 	return (
 		<>
-		  <form action="" className="" onSubmit={handleSubmitText} >
-				<label htmlFor="exampleFormControlInput1" className="form-label">Ingrese su nombre de usuario</label>
-				<input ref={inputRef} type="text"/>
-				<button className="btn btn-primary" type="submit">Submit</button>
-			</form>
+		  <Form labelText={'Ingrese su nombre de usuario'} submitFunction={handleSubmitText} inputRef={inputRef} />
+
 		  <h3>holis {userName}</h3>
-			<form action="" onSubmit={handleSubmitNumber}>
-				<label htmlFor="exampleFormControlInput1">Ingrese un numero(del 1 al 826)</label>
-				<input type="text" ref={inputRef2}/>
-				<button className="btn btn-primary" type="submit">Submit</button>
-			</form>
+
+			<Form labelText={'Ingrese un numero(del 1 al 826)'} submitFunction={handleSubmitNumber} inputRef={inputRef2}></Form>
+
 			<img src={imageUrl} alt='imagen de personaje de rick y morty'/>
 		</>
 	)
