@@ -29,7 +29,7 @@ export default function HelloUser() {
 
 	useEffect(() => {
 		fetch(`${rymLink}${characterId}`)
-		  .then((response) => response.json())
+		    .then((response) => response.json())
 			.then((data) =>{
 				console.log(data)
 				setImageUrl(data.image)
@@ -40,11 +40,11 @@ export default function HelloUser() {
 
 	return (
 		<>
-		  <Form labelText={'Ingrese su nombre de usuario'} submitFunction={handleSubmitText} inputRef={inputRef} />
+		    <Form labelText={'Ingrese su nombre de usuario'} submitFunction={handleSubmitText} inputRef={inputRef} />
 
-		  <h3>holis {userName}</h3>
+		    <h3>holis {userName}</h3>
 
-			<Form labelText={'Ingrese un numero(del 1 al 826)'} submitFunction={handleSubmitNumber} inputRef={inputRef2}></Form>
+		    <Form labelText={'Ingrese un numero(del 1 al 826)'} submitFunction={handleSubmitNumber} inputRef={inputRef2}></Form>
 
 			<img src={imageUrl} alt='imagen de personaje de rick y morty'/>
 		</>
